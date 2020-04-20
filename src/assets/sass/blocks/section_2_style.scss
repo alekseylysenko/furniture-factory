@@ -1,0 +1,84 @@
+.advantage{
+   
+    background-color: #fff;;
+    min-height: 800px;
+    position: relative;
+}
+.advantage__row{
+    display: flex;
+    margin-top: 40px;
+}
+.number__icon img{
+    margin-left: 200px;
+    width: 40px;
+}
+.number__icon{
+    margin-top: 15px;
+    margin-bottom: 102px;
+}
+.advantage__img img{
+    width: 374px;
+    height: 422px;
+    border-radius:8px;
+}
+.advantage__img{
+    float: right;
+    opacity: .8;
+    margin-bottom: 360px;
+}
+.advantage__title{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 19px;
+    letter-spacing: 0.03em;
+    color: #544E4E;
+}
+.advantage__cause-text{
+    width: 40%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 133.69%;
+    letter-spacing: 0.03em;
+    color: #605656;
+    margin-top: 15px;
+}
+.advantage__text{
+    margin-top: 30px;
+    margin-left: 28px;
+}
+.advantage__text-col{
+      min-width: 40%;
+}
+.advantage__logo-text{
+    position: absolute;
+    max-width: 1366px;
+    height: 334px;
+    bottom: -200px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 246px;
+    letter-spacing: 0.02em;
+    color: rgba(0, 0, 0, 0.157); 
+    z-index: 3;
+
+    @media (max-width: 1260px){
+        font-size: 216px;
+        bottom: -220px;
+    }   
+    @media (max-width: 1160px){
+        font-size: 190px;
+        bottom: -230px;
+    }   
+    @media (max-width: 1060px){
+        font-size: 160px;
+        bottom: -230px;
+    }   
+    @media (max-width:960px){
+        font-size: 130px;
+        bottom: -260px;
+    }   
+}

@@ -1,0 +1,31 @@
+@import "vars";
+@import "mixins";
+
+body {
+    font-size: 8px;
+    margin: 0;
+    padding: 0;
+ 
+    @media (min-width: 1666px){
+        font-size: 5px;
+    }
+    @media (min-width: 2066px){
+        font-size: 4px;;
+    }
+    @media (min-width: 2166px){
+        font-size: 3.7px;
+    }
+}
+
+
+@import "vendor/owl.carousel";
+@import "vendor/owl.theme.green";
+@import "blocks/section_1_style";
+@import "blocks/section_2_style";
+@import "blocks/section_3_style";
+@import "blocks/slider";
+@import "blocks/header";
+@import "blocks/btn";
+@import "blocks/modal";
+@import "vendor/animate";
+
