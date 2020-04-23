@@ -3,8 +3,7 @@
 
 body {
     font-size: 8px;
-    margin: 0;
-    padding: 0;
+
  
     @media (min-width: 1666px){
         font-size: 5px;
@@ -23,6 +22,10 @@ body {
 @import "blocks/section_1_style";
 @import "blocks/section_2_style";
 @import "blocks/section_3_style";
+@import "blocks/section_4_style";
+@import "blocks/menu";
+@import "blocks/tabs";
+@import "blocks/footer";
 @import "blocks/slider";
 @import "blocks/header";
 @import "blocks/btn";

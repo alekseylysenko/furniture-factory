@@ -184,19 +184,20 @@
 	 * @public
 	 */
 	Owl.Defaults = {
-		items: 3,
+		items: 1,
 		loop: true,
 		center: true,
 		rewind: false,
 		checkVisibility: true,
-
+	
+		 
 		mouseDrag: true,
 		touchDrag: true,
 		pullDrag: true,
 		freeDrag: false,
 
-		margin: 10,
-		stagePadding: 0,
+		margin: 50,
+		stagePadding:  0,
 
 		merge: false,
 		mergeFit: true,
@@ -209,7 +210,9 @@
 		fluidSpeed: false,
 		dragEndSpeed: false,
 
-		responsive: {},
+		responsive: {
+		
+		},
 		responsiveRefreshRate: 200,
 		responsiveBaseElement: window,
 
@@ -233,6 +236,62 @@
 		stageOuterClass: 'owl-stage-outer',
 		grabClass: 'owl-grab'
 	};
+	
+	$(document).ready(function(){
+		$(".slide-one").owlCarousel({
+			  loop:true, //Зацикливаем слайдер
+			  margin:0, //Отступ от картино если выводите больше 1
+			  nav:false, //Отключил навигацию
+			 
+			  responsive:{ //Адаптация в зависимости от разрешения экрана
+				  0:{
+					  items:1
+				  },
+				  600:{
+					  items:2
+				  },
+				  1000:{
+					  items:3
+				  }
+			  }
+		  });
+		
+		  // Go to the next item
+		  	  var owl = $('.slide-two');
+		  owl.owlCarousel();
+	  $('.next').click(function() {
+		owl.trigger('next.owl.carousel');
+	});
+	// Go to the previous item
+	$('.prev').click(function() {
+		// With optional speed parameter
+		// Parameters has to be in square bracket '[]'
+		owl.trigger('prev.owl.carousel', [300]);
+	});
+
+		  $(".slide-two").owlCarousel({
+			
+			  item: 1,
+			  nav: true,
+			  loop:true, //Зацикливаем слайдер
+			  margin:10, //Отступ от картино если выводите больше 1
+			  autoWidth:true,
+			
+			  responsive:{ //Адаптация в зависимости от разрешения экрана
+				  0:{
+					  items:1
+				  },
+				  600:{
+					  items:1
+				  },
+				  1000:{
+					  items:1
+				  }
+			  }
+		  });
+	  });  
+
+
 
 	/**
 	 * Enumeration for width.

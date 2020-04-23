@@ -1,7 +1,9 @@
 header{
+    position: relative;
+    margin: 0 auto;
+    max-width: 1366px;
     background: url('../img/bg_1.jpg') center center /cover no-repeat;
-    height:620px;
-    position:relative;
+    min-height:620px;
 }
 .logo{
     width: 100%;
@@ -10,6 +12,8 @@ header{
     justify-content: space-between;
     align-content: center;
     color: #fff;
+   
+
 }
 .logo__text{
     width: 20%;
@@ -29,6 +33,11 @@ header{
     font-size: 20px;
     color: #FFFFFF;
     text-align: end;
+    @media (max-width: 1000px){
+        margin-right:50px;
+        font-size: 10px;
+        width: 40%;
+    }
 }
 .cont {
     
@@ -80,6 +89,10 @@ header{
     color: rgba(227, 60, 60, 0.95);
     text-transform: uppercase;
     line-height: 0;
+    @media (max-width: 1000px){
+        font-size: 70px;
+        margin-top: 60px;
+    }
 }
 .title_sub{
     display: block;
@@ -96,19 +109,27 @@ header{
     font-weight: 300;
     font-size: 30px;
     color: #FFFFFF;
+    @media (max-width: 1000px){
+        font-size: 18px;
+        margin-top: 60px;
+    }
 }
 .menu{
-    position:absolute;
-    bottom: 0;
+    position: absolute;
+    flex: bottom;
     width: 100%;
     background: rgba(255, 255, 255, 0.52) ;
     background-size: cover;
     display: flex;
     flex-direction: row;
     max-width: 1366px;
-    margin: 0;
+    bottom:0;
     height: 80px;
     align-items: center;
+    @media (max-width: 1000px){
+        width: 100%;
+        display: none;
+    }
 }
 .menu__logo{
     width: 16%;
@@ -130,12 +151,10 @@ nav ul{
     font-size: 18px;
 }
 menu li {
-    width: 240px;
     height: 32px;
     color: #110f0fbe;
 }
-nav{
-    
+nav{  
     width: 60%;
 }
 .icon__search{

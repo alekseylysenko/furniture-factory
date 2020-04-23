@@ -9,30 +9,59 @@
     margin-top: 40px;
 }
 .number__icon img{
-    margin-left: 200px;
+    margin-left: 100px;
     width: 40px;
+    @media (max-width: 1000px){
+        margin-left: 20px;
+        width: 20px;
+    } 
+    
+}
+.row_icon{
+    display: flex;
+    justify-content: left;
+    width: 90%;
+    height: 40px;
 }
 .number__icon{
-    margin-top: 15px;
+    margin-top: 16px;
     margin-bottom: 102px;
+    @media (max-width: 1000px){
+        margin-top: 36px;
+        margin-bottom: 172px;
+    } 
 }
 .advantage__img img{
     width: 374px;
     height: 422px;
     border-radius:8px;
+    @media (max-width: 1000px){
+        display: none;
+    } 
 }
-.advantage__img{
+.advantage__img{ 
+    position: absolute;
+    right: 0;;
+    top: 170px;
     float: right;
     opacity: .8;
-    margin-bottom: 360px;
+
 }
 .advantage__title{
     font-family: Montserrat;
     font-style: normal;
     font-weight: 900;
     font-size: 19px;
-    letter-spacing: 0.03em;
     color: #544E4E;
+    margin: 0 auto;
+    margin-top: 22px;
+    margin-left: 20px;
+    width: 100%;
+    height: 30px;
+    @media (max-width: 1000px){
+        font-size: 13px;
+        margin-top: 32px;
+    } 
 }
 .advantage__cause-text{
     width: 40%;
@@ -43,7 +72,13 @@
     line-height: 133.69%;
     letter-spacing: 0.03em;
     color: #605656;
-    margin-top: 15px;
+    margin-top: 35px;
+    margin-left: 100px;
+    @media (max-width: 1000px){
+        margin: 0 auto;
+        margin-top: 60px;
+        width: 100%;
+    } 
 }
 .advantage__text{
     margin-top: 30px;
@@ -51,12 +86,17 @@
 }
 .advantage__text-col{
       min-width: 40%;
+      @media (max-width: 1000px){
+        min-width: 100%;
+        margin-bottom: 60px;
+    } 
 }
+
 .advantage__logo-text{
     position: absolute;
     max-width: 1366px;
-    height: 334px;
-    bottom: -200px;
+    height: 30px;
+    bottom: 100px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 800;
@@ -67,18 +107,23 @@
 
     @media (max-width: 1260px){
         font-size: 216px;
-        bottom: -220px;
+        bottom: 1px;
     }   
     @media (max-width: 1160px){
         font-size: 190px;
-        bottom: -230px;
+        bottom: 1px;
     }   
     @media (max-width: 1060px){
         font-size: 160px;
-        bottom: -230px;
+        bottom: 1px;
     }   
     @media (max-width:960px){
         font-size: 130px;
-        bottom: -260px;
+        bottom: 1px;
+    }   
+    @media (max-width:660px){
+        align-items:center;
+        font-size: 65px;
+        bottom: 1px;
     }   
 }

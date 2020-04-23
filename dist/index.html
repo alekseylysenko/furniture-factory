@@ -5,15 +5,7 @@
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
- <link rel="shortcut icon" href="./img/favicons/favicon.ico" type="image/x-icon">
- <link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png">
- <link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-touch-icon-57x57.png">
- <link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-touch-icon-72x72.png">
- <link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-touch-icon-76x76.png">
- <link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-touch-icon-114x114.png">
- <link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-touch-icon-120x120.png">
- <link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-touch-icon-144x144.png">
- <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon-180x180.png">
+ <link rel="icon" href="assets/img/favicon" type="image/x-icon">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="stylesheet" href="assets/css/style.css">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -33,8 +25,23 @@
     </div>  <!-- class="logo" -->
     <div class="title"><h1>m design</h1></div>
     <div class="title_sub"><h2>Фабрика современной домашней мебели</h2></div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">О НАС</a>
+        <a href="#">ПРИЕМУЩЕСТВА </a>
+        <a href="#">КАТАЛОГ</a>
+        <a href="#">НОВИНКИ</a>
+        <a href="#">ПРОЕКТЫ</a>
+    
+      </div>
+      
+      <!-- Use any element to open the sidenav -->
+      <span class="togl" onclick="openNav()"><img src="assets/img/menu.svg" alt=""></span>
+      
+      <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
     <div class="menu">
     <div class="menu__logo">m design</div>
+    
     <nav>
         <ul>
             <li>О НАС</li>
@@ -60,7 +67,6 @@
         и производит мебель</div>
     </div> <!-- class="about_title -->
     <div class="about__text">Для нас мебель – объект изучения и творческих экспериментов. Конструкторское бюро находится в непрерывном поиске новых, нестандартных дизайнерских идей и разработок, что способствует появлению уникального ассортимента.
-    
         Наша цель – сделать интернет-магазин удобным. Купить мебель в нестандартной обивке или рассчитать стоимость гарнитура в нестандартную планировку – простой и понятный конструктор на сайте учтет все требования.
      </div>
                <div class="row__card  ">
@@ -104,25 +110,43 @@
         </div> <!-- class="about_title -->
         <div class="advantage__row">
             <div class="number__icon-col">
-                <div class="number__icon"><img src="assets/img/icons/icon_1.png" alt=""></div>
-                <div class="number__icon"><img src="assets/img/icons/icon_2.png" alt=""></div>
-                <div class="number__icon"><img src="assets/img/icons/icon_3.png" alt=""></div>
+               
+          
+               
             </div> <!-- class="number__icon_col -->
     
             <div class="advantage__text-col">
                 <div class="advantage__text">
+                    <div class="row_icon">    
+                    <div class="number__icon"><img src="assets/img/icons/icon_1.png" alt=""></div>
                     <div class="advantage__title">Собственное производство</div>
+                 
+                    </div> <!-- class="row_icon -->
+    
                     <div class="advantage__cause-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas egestas auctor elit condimentum ut nulla magna euismod pellentesque. Nulla ultricies tellus volutpat.</div>
                 </div><!--  advantage__text -->
+    
                 <div class="advantage__text">
-                    <div class="advantage__title">Конструкторско-технический отдел</div>
+                    <div class="row_icon">
+                    <div class="number__icon"><img src="assets/img/icons/icon_2.png" alt=""></div>
+                    <div class="advantage__title">Конструкторско-технический отдел</div>      
+                    
+                    </div> <!-- class="row_icon -->
+    
                     <div class="advantage__cause-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas egestas auctor elit condimentum ut nulla magna euismod pellentesque. Nulla ultricies tellus volutpat.</div>
-                </div>
+                </div><!--  advantage__text -->
+    
                 <div class="advantage__text">
+                    <div class="row_icon">   
+                    <div class="number__icon"><img src="assets/img/icons/icon_3.png" alt=""></div>
                     <div class="advantage__title">Сотрудничество с дизайнерами и архитекторами</div>
+                 
+                </div> <!-- class="row_icon -->
+    
                     <div class="advantage__cause-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas egestas auctor elit condimentum ut nulla magna euismod pellentesque. Nulla ultricies tellus volutpat.</div>
-                </div>
+                </div><!--  advantage__text -->
             </div> <!-- class="advantage__text-col -->
+    
             <div class="advantage__img">
                 <img src="assets/img/livingroom.jpg" alt="">
             </div>
@@ -145,45 +169,267 @@
         </div> <!-- class="about_title -->
     
         <div class="news_menu">
-                <ul>
-                    <li>диваны</li>
-                    <li>кровати</li>
-                    <li>столы</li>
-                    <li>стулья</li>
-                    <li>кресла</li>
-                    <li>акссесуары</li>
-                </ul>
+             
+                    <input type="radio" name="inset" value="" id="tab_1" checked>
+                    <label for="tab_1">Диваны</label>
+                
+                    <input type="radio" name="inset" value="" id="tab_2">
+                    <label for="tab_2">Кровати</label>
+                
+                    <input type="radio" name="inset" value="" id="tab_3">
+                    <label for="tab_3">столы</label>
+                
+                    <input type="radio" name="inset" value="" id="tab_4">
+                    <label for="tab_4">стулья</label>
+    
+           
                 <div class="line__black"></div>
-        </div>
-    <div class="wrapper">
-            <div class="owl-carousel col-owl">
+    
+                <div id="txt_1" class="txt">
+                <div class="owl-carousel col-owl owl-theme slide-one" >
                     <div class="owl__1">
                         <div class="row_owl">
                             <div class="item__name">Диван Borneo </div>
-                            <div class="img_plus"><img src="/assets/img/owl-carousel/plus-circle.png" alt=""></div>
+                            <div class="img_plus"><img src="assets/img/owl-carousel/plus-circle.png" alt=""></div>
                         </div>  <!-- class="row_owl -->
                         <div class="price">66 300<span class="iconify" data-inline="false" data-icon="fa-solid:ruble-sign" ></span> </div>
                         <div class="more">Подробнее ></div>
                     </div>
-                    <div class="owl__1">
+                    <div class="owl__2">
                         <div class="row_owl">
                             <div class="item__name">Диван Riora </div>
-                            <div class="img_plus"><img src="/assets/img/owl-carousel/plus-circle.png" alt=""></div>
+                            <div class="img_plus"><img src="assets/img/owl-carousel/plus-circle.png" alt=""></div>
                         </div>  <!-- class="row_owl -->
                         <div class="price">34 600<span class="iconify" data-inline="false" data-icon="fa-solid:ruble-sign" ></span> </div>
                         <div class="more">Подробнее ></div>
                     </div>
-                    <div class="owl__1">
+                    <div class="owl__3">
                         <div class="row_owl">
                             <div class="item__name">Диван Sicilia </div>
-                            <div class="img_plus"><img src="/assets/img/owl-carousel/plus-circle.png" alt=""></div>
+                            <div class="img_plus"><img src="assets/img/owl-carousel/plus-circle.png" alt=""></div>
                         </div>  <!-- class="row_owl -->
                         <div class="price">53 000<span class="iconify" data-inline="false" data-icon="fa-solid:ruble-sign" ></span> </div>
                         <div class="more">Подробнее ></div>
                     </div>
-            </div> <!-- class="owl-carousel" -->
-    </div></div>
-    </section>    
+                    <div class="owl__2">
+                        <div class="row_owl">
+                            <div class="item__name">Диван Riora </div>
+                            <div class="img_plus"><img src="assets/img/owl-carousel/plus-circle.png" alt=""></div>
+                        </div>  <!-- class="row_owl -->
+                        <div class="price">34 600<span class="iconify" data-inline="false" data-icon="fa-solid:ruble-sign" ></span> </div>
+                        <div class="more">Подробнее ></div>
+                    </div>           
+                </div> <!-- class="owl-carousel" -->
+                </div>
+                <div id="txt_2" class="txt">
+                <div class="owl-carousel col-owl owl-theme slide-one">
+                    <div class="owl__bed1">
+                        <div class="row_owl">
+                            <div class="item__name">Кровать Borneo </div>
+                            <div class="img_plus"><img src="assets/img/owl-carousel/plus-circle.png" alt=""></div>
+                        </div>  <!-- class="row_owl -->
+                        <div class="price">66 300<span class="iconify" data-inline="false" data-icon="fa-solid:ruble-sign" ></span> </div>
+                        <div class="more">Подробнее ></div>
+                    </div>
+                    <div class="owl__bed2">
+                        <div class="row_owl">
+                            <div class="item__name">Кровать Riora </div>
+                            <div class="img_plus"><img src="assets/img/owl-carousel/plus-circle.png" alt=""></div>
+                        </div>  <!-- class="row_owl -->
+                        <div class="price">34 600<span class="iconify" data-inline="false" data-icon="fa-solid:ruble-sign" ></span> </div>
+                        <div class="more">Подробнее ></div>
+                    </div>
+                    <div class="owl__bed3">
+                        <div class="row_owl">
+                            <div class="item__name">Кровать Sicilia </div>
+                            <div class="img_plus"><img src="assets/img/owl-carousel/plus-circle.png" alt=""></div>
+                        </div>  <!-- class="row_owl -->
+                        <div class="price">53 000<span class="iconify" data-inline="false" data-icon="fa-solid:ruble-sign" ></span> </div>
+                        <div class="more">Подробнее ></div>
+                    </div>
+                    <div class="owl__bed4">
+                        <div class="row_owl">
+                            <div class="item__name">Кровать Rita </div>
+                            <div class="img_plus"><img src="assets/img/owl-carousel/plus-circle.png" alt=""></div>
+                        </div>  <!-- class="row_owl -->
+                        <div class="price">34 600<span class="iconify" data-inline="false" data-icon="fa-solid:ruble-sign" ></span> </div>
+                        <div class="more">Подробнее ></div>
+                    </div>           
+                </div> <!-- class="owl-carousel" -->
+                </div>
+    
+                <div id="txt_4" class="txt">
+                    <div class="owl-carousel col-owl owl-theme slide-one">
+                        <div class="owl__chair1" style=" width: 100%;
+                        height: 220px; background:url('assets/img/collection/chair1.png') center center/ contain no-repeat ;">
+                            <div class="row_owl">
+                                <div class="item__name">Кровать Borneo </div>
+                                <div class="img_plus"><img src="assets/img/owl-carousel/plus-circle.png" alt=""></div>
+                            </div>  <!-- class="row_owl -->
+                            <div class="price">66 300<span class="iconify" data-inline="false" data-icon="fa-solid:ruble-sign" ></span> </div>
+                            <div class="more">Подробнее ></div>
+                        </div>
+                        <div class="owl__chair2" style=" width: 100%;
+                        height: 220px; background:url('assets/img/collection/chair2.png') center center/ contain no-repeat ;">
+                            <div class="row_owl">
+                                <div class="item__name">Кровать Riora </div>
+                                <div class="img_plus"><img src="assets/img/owl-carousel/plus-circle.png" alt=""></div>
+                            </div>  <!-- class="row_owl -->
+                            <div class="price">34 600<span class="iconify" data-inline="false" data-icon="fa-solid:ruble-sign" ></span> </div>
+                            <div class="more" style="color:rgba(240, 248, 255, 0.671);">Подробнее ></div>
+                        </div>
+                        <div class="owl__chair3" style=" width: 100%;
+                        height: 220px; background:url('assets/img/collection/chair3.png') center center/ contain no-repeat ;">
+                            <div class="row_owl">
+                                <div class="item__name">Кровать Sicilia </div>
+                                <div class="img_plus"><img src="assets/img/owl-carousel/plus-circle.png" alt=""></div>
+                            </div>  <!-- class="row_owl -->
+                            <div class="price">53 000<span class="iconify" data-inline="false" data-icon="fa-solid:ruble-sign" ></span> </div>
+                            <div class="more">Подробнее ></div>
+                        </div>
+                        <div class="owl__chair4" style=" width: 100%;
+                        height: 220px; background:url('assets/img/collection/chair4.png') center center/ contain no-repeat ;">
+                            <div class="row_owl">
+                                <div class="item__name">Кровать Rita </div>
+                                <div class="img_plus"><img src="assets/img/owl-carousel/plus-circle.png" alt=""></div>
+                            </div>  <!-- class="row_owl -->
+                            <div class="price">34 600<span class="iconify" data-inline="false" data-icon="fa-solid:ruble-sign" ></span> </div>
+                            <div class="more">Подробнее ></div>
+                        </div>           
+                    </div> <!-- class="owl-carousel" -->
+                    </div>
+    
+                <div id="txt_3" class="txt">
+                    <div class="owl-carousel col-owl owl-theme slide-one">
+                        <div class="owl__table1" style=" width: 100%;
+                        height: 220px; background:url('assets/img/collection/table1.png') center center/ contain no-repeat ;">
+                            <div class="row_owl">
+                                <div class="item__name">Кровать Borneo </div>
+                                <div class="img_plus"><img src="assets/img/owl-carousel/plus-circle.png" alt=""></div>
+                            </div>  <!-- class="row_owl -->
+                            <div class="price">66 300<span class="iconify" data-inline="false" data-icon="fa-solid:ruble-sign" ></span> </div>
+                            <div class="more">Подробнее ></div>
+                        </div>
+                        <div class="owl__chair2" style=" width: 100%;
+                        height: 220px; background:url('assets/img/collection/table2.png') center center/ contain no-repeat ;">
+                            <div class="row_owl">
+                                <div class="item__name">Кровать Riora </div>
+                                <div class="img_plus"><img src="assets/img/owl-carousel/plus-circle.png" alt=""></div>
+                            </div>  <!-- class="row_owl -->
+                            <div class="price">34 600<span class="iconify" data-inline="false" data-icon="fa-solid:ruble-sign" ></span> </div>
+                            <div class="more" >Подробнее ></div>
+                        </div>
+                        <div class="owl__chair3" style=" width: 100%;
+                        height: 220px; background:url('assets/img/collection/table3.png') center center/ contain no-repeat ;">
+                            <div class="row_owl">
+                                <div class="item__name">Кровать Sicilia </div>
+                                <div class="img_plus"><img src="assets/img/owl-carousel/plus-circle.png" alt=""></div>
+                            </div>  <!-- class="row_owl -->
+                            <div class="price">53 000<span class="iconify" data-inline="false" data-icon="fa-solid:ruble-sign" ></span> </div>
+                            <div class="more">Подробнее ></div>
+                        </div>
+                        <div class="owl__chair4" style=" width: 100%;
+                        height: 220px; background:url('assets/img/collection/table4.png') center center/ contain no-repeat ;">
+                            <div class="row_owl">
+                                <div class="item__name">Кровать Rita </div>
+                                <div class="img_plus"><img src="assets/img/owl-carousel/plus-circle.png" alt=""></div>
+                            </div>  <!-- class="row_owl -->
+                            <div class="price">34 600<span class="iconify" data-inline="false" data-icon="fa-solid:ruble-sign" ></span> </div>
+                            <div class="more">Подробнее ></div>
+                        </div>           
+                    </div> <!-- class="owl-carousel" -->
+                    </div>
+            </div>    <!-- class="news_menu"      -->
+    </div>
+    </section>    <section class="projects">
+    <div class="cont">
+        <div class="about__title">
+            <div class="number">04.</div>
+            <div class="about__title-text ">Реализованые проекты клиентов<br> 
+                с мебелью от <span class="">M DESIGN</span>
+            </div>
+        </div> <!-- class="about_title -->
+    <div class="wrapp">
+       <span class="iconify prev" data-inline="false" data-icon="dashicons:arrow-left-alt2" style="color: #e33c3c; font-size: 50px;"></span>
+        <div class="owl-carousel slide-two  owl-theme">
+            <div class="slide-two_item">
+                <div class="slide-two__img"><img src="assets/img/owl-carousel/lounge-1.jpg" alt=""></div>
+                <div class="slide-two__text">
+                    <h2>Образ интерьера студии<br> Scott VS Jones</h2>
+                    <div class="dsr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus aliquam convallis tincidunt dignissim lacus quis bibendum ac. Ac ut bibendum enim sem. Ut cursus in amet lobortis in. Neque, cras lacus nec tristique risus feugiat et ut mi. Quis diam non commodo, quam nunc. Vitae pulvinar aliquam fringilla purus etiam velit vitae. Quisque sed sed a elementum nulla amet, elit at bibendum. Vel gravida lobortis sed elit libero fusce pulvinar. Neque in nulla volutpat tempor enim in sagittis quis et. </div>
+                </div>  <!-- class="slide-two__text -->
+            </div> <!-- slide-two_item -->
+    
+            <div class="slide-two_item">
+                <div class="slide-two__img"><img src="assets/img/owl-carousel/two-gray.jpg" alt=""></div>
+                <div class="slide-two__text">
+                    <h2>Образ интерьера студии<br> Scott VS Jones</h2>
+                    <div class="dsr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus aliquam convallis tincidunt dignissim lacus quis bibendum ac. Ac ut bibendum enim sem. Ut cursus in amet lobortis in. Neque, cras lacus nec tristique risus feugiat et ut mi. Quis diam non commodo, quam nunc. Vitae pulvinar aliquam fringilla purus etiam velit vitae. Quisque sed sed a elementum nulla amet, elit at bibendum. Vel gravida lobortis sed elit libero fusce pulvinar. Neque in nulla volutpat tempor enim in sagittis quis et. </div>
+                </div>  <!-- class="slide-two__text -->
+            </div> <!-- slide-two_item -->
+    
+            <div class="slide-two_item">
+                <div class="slide-two__img"><img src="assets/img/owl-carousel/lounge-2.jpg" alt=""></div>
+                <div class="slide-two__text">
+                    <h2>Образ интерьера студии<br> Scott VS Jones</h2>
+                    <div class="dsr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus aliquam convallis tincidunt dignissim lacus quis bibendum ac. Ac ut bibendum enim sem. Ut cursus in amet lobortis in. Neque, cras lacus nec tristique risus feugiat et ut mi. Quis diam non commodo, quam nunc. Vitae pulvinar aliquam fringilla purus etiam velit vitae. Quisque sed sed a elementum nulla amet, elit at bibendum. Vel gravida lobortis sed elit libero fusce pulvinar. Neque in nulla volutpat tempor enim in sagittis quis et. </div>
+                </div>  <!-- class="slide-two__text -->
+            </div> <!-- slide-two_item -->
+        </div> <!-- ="slide-two -->
+    
+       <span class=" iconify next" data-inline="false" data-icon="dashicons:arrow-right-alt2" style="color: #e33c3c; font-size: 50px;"></span>
+    </div>
+    <div class="mailing">
+        <img src="assets/img/chair.png" alt="" class="chair__img_1">
+        <div class="mailing__block">
+            <h2>Подпишитесь на нашу рассылку</h2>
+            <p class="mailing__title">Начните получать полезные статьи, акции  и новости уже сейчас</p>
+            <form action="#">
+                <input  class="email" placeholder="Ваш e-mail" name="email">
+                <input class="btn" type="submit" value="Отправить">
+                <p class="politic"><input type="checkbox"> Нажимая на кнопку вы даёте согласие на обработку персональных данных<br>
+                    и соглашаетесь с политикой конфиденциальности</p>
+            </form>
+        </div>
+        <img src="assets/img/chair-2.png" alt="" class="chair__img_2">
+    </div>
+    
+    </div> <!--  class="cont -->
+    </section>    <footer>
+    <div class="cont">
+        <div class="footer_col">
+            <div class="footer_contact">
+                <h2>Контакты</h2>
+                <p>Информация для потребителей</p>
+                <p>Сотрудничество и дизайн интерьера</p>
+                <p>Рекомендации по уходу и чистке</p>
+                <p>Обработка данных </p>
+                <p>Карта сайта</p>
+            </div>
+            <div class="footer_info">
+                <h2>Информация</h2>
+                <p>Услуга выезда менеджера</p>
+                <p>Гарантия и возврат</p>
+                <p>Условия доставки</p>
+                <p>Материалы обивки</p>
+                <p>Механизмы диванов</p>
+            </div>
+            <div class="footer_collection">
+                <h2>Коллекции</h2>
+                <div class="row_collection_1">
+                    <img src="assets/img/collection/col1.jpg" alt="">
+                    <img src="assets/img/collection/col2.png" alt="">
+                    <img src="assets/img/collection/col3.jpg" alt="">
+                </div>
+                <div class="row_collection_2">
+                    <img src="assets/img/collection/col4.jpg" alt="">
+                    <img src="assets/img/collection/col5.png" alt="">
+                    <img src="assets/img/collection/col6.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    </footer>    
     
     <div class="popup" >
         <div class="popup_dialog">
@@ -201,7 +447,8 @@
                 </div>
             </div>
         </div>
-    </div>    <script src="assets/js/app.min.js"></script>
+    </div> 
+    <script src="assets/js/app.min.js"></script>
     <script>
     $(document).ready(function(){
         $(".owl-carousel").owlCarousel();

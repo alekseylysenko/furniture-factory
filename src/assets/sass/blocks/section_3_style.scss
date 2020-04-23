@@ -1,46 +1,37 @@
 .news{
+    max-width: 1366px;
+    margin: 0 auto;
     position: relative;
-    min-height: 800px;
+    min-height: 690px;
     background: url(../img/bg_3.jpg) center center/cover no-repeat;
     padding-top: 70px;
-}
-.news_menu ul{
-    display: flex;
-    list-style: none;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: 12px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    text-align: center;
-    margin-bottom: 0;
-}
-.news_menu li{
-    overflow: hidden;
-    background: #C4C4C4 center top/cover;
-    border-radius: 15px 15px 0px 0px;
-    width: 166px;
-    line-height: 40px;
-    height: 40px; 
-    margin-right: 10px;
-    text-transform: uppercase;
-}
-.news_menu{
-    margin-top: 40px;
-    margin-left: 180px;
-    margin-right: 180px;
-    height: 30px; 
-}
-.line__black{ 
-    border-top: black 1px solid;
-    margin-left: 40px;
-    margin-right: 10px;
-    margin-bottom: 20px;
-   
+    @media (max-width: 1000px){
+        padding-top: 10px;
+    }
 }
 
-.col-owl{
+
+.txt{
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+    width:100%;
+    height: auto;
+}
+.news_menu{ 
+    text-align: center;
+    margin: 0 auto; 
+    margin-top: 40px;
+    height: auto; 
+    @media (max-width: 1000px){
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 40px;
+        height: 20px; 
+    }
+}
+
+.col-owl {
 width: 100%;
 display: flex;
 justify-content: space-between;
@@ -51,15 +42,43 @@ margin-top: 60px;
     width: 100%;
     height: 220px;
     background: url('../img/owl-carousel/owl_1.png') center center/contain  no-repeat;
-
 }
-
+.owl__2{
+    width: 100%;
+    height: 220px;
+    background: url('../img/owl-carousel/owl_2.png') center center/contain  no-repeat;
+}
+.owl__3{
+    width: 100%;
+    height: 220px;
+    background: url('../img/owl-carousel/owl_3.png') center center/contain  no-repeat;
+}
+.owl__bed1{
+    width: 100%;
+    height: 220px;
+    background: url('../img/collection/bed1.png') center center/contain  no-repeat;
+}
+.owl__bed2{
+    width: 100%;
+    height: 220px;
+    background: url('../img/collection/bed2.png') center center/contain  no-repeat;
+}
+.owl__bed3{
+    width: 100%;
+    height: 220px;
+    background: url('../img/collection/bed3.png') center center/contain  no-repeat;
+}
+.owl__bed4{
+    width: 100%;
+    height: 220px;
+    background: url('../img/collection/bed4.png') center center/contain  no-repeat;
+}
 /* ================== СТИЛИЗАЦИЯ OWL CAROUSEL =========================== */
 
 .owl-carousel .activ {
     width: 80%;
     }
-  .owl-carousel .item:hover {
+.owl-carousel .item:hover {
     width: 100%;
     }
 .owl-item.center > div { 
@@ -71,7 +90,10 @@ margin-top: 60px;
     margin: 0 auto;
     .item__name{ 
         font-size: 14px; 
-        margin-top:  20px;
+        margin-top:  40px;
+        @media (max-width: 1000px){
+            font-size: 8px;
+        }
     }
     .img_plus{
         margin-top: 35px;
@@ -81,6 +103,9 @@ margin-top: 60px;
     }
     .price{
         font-size: 20px;
+        @media (max-width: 1000px){
+            font-size: 10px;
+        }
     }
     .iconify{
         font-size: 16px;
@@ -94,16 +119,14 @@ margin-top: 60px;
 /* ========================================================================== */
 .row_owl{
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: space-between;
-   align-items: center;
 }
 .img_plus{
     margin-top: 20px;
     margin-right: 30px;
     width: 30px;
     height: 30px;
+  
 }
 .item__name{
     font-family: Montserrat;
@@ -111,25 +134,51 @@ margin-top: 60px;
     font-weight: 600;
     font-size: 18px;
     color: rgba(17, 16, 16, 0.719);  
+    margin-top: 20px;
     margin-left: 20px;
+    @media (max-width: 1000px){
+        margin-left: 40px;
+        margin-top: 20px;
+    }
 }
 .price{
+    width: 100%;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 800;
     font-size: 24px;
     color: rgba(17, 16, 16, 0.719);  
+    text-align: left;
     margin-left: 20px;
+    @media (max-width: 1000px){
+        margin-left: 40px;
+    }
 }
 .iconify{
     font-size: 18px;
 }
 .more{
+    
     font-family: Montserrat;
     font-style: normal;
     font-weight: 800;
     font-size: 14px;
     color: rgb(51, 49, 49);
+    float: left;
     margin-left: 20px;
     margin-top: 100px;
+    @media (max-width: 1000px){
+        margin-left: 40px;
+    }
+}
+.line__black{ 
+    border-top: black 1px solid;
+    margin-left: 200px;
+    margin-right: 210px;
+    margin-top: 1px;
+    @media (max-width: 1000px){
+        margin: 0;
+        margin-top: 1px;
+       width: 100%;
+    }
 }
